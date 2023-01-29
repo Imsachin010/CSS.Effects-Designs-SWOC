@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+img{
+    width: 100%;
+    display: block;
+
+}
+#offers{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60% auto;
+}
+.title{
+    background-color: #eceaea;
+    padding:1rem;
+
+}
+.title h1{
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.title p{
+    font-weight: 400;
+    opacity: 0.7;
+    max-width: 500px;
+    font-size: 2rem;
+    margin: 0.6rem auto 0 auto;
+    line-height: 1.6;
+
+}
+.offer-list{
+    background-color: rgb(37,36,36);
+}
+.offers-list-container
+{
+    max-width: 1170px;
+    margin: 100px auto 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.offers-items{
+    margin: 1rem;
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 18px 0 rgba(35,35, 35, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.offers-items:hover
+{box-shadow: 0 0 18px 0 rgba(35,35, 35, 0.4);
+
+}
+.offers-items img{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.heart-icon
+{
+    position: absolute;
+    left: 1.4rem;
+    top: 1.4rem;
+    font-size: 1.4rem;
+    color: #00013f;
+
+}
+
+.content
+{
+    /* height: 0; */
+    overflow: scroll;
+    transition: height 0.3 ease-in-out;
+    margin-bottom: 1rem;
+}
+.content p{
+    font-size: .95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0.4rem;
+    
+}
+.content::-webkit-scrollbar{
+    width: 0px;
+
+}
+.content-show
+{
+    height: 350px;
+}
+
+.name
+{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.collapsible-icon
+{
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+}
+.collapsible-icon:hover{
+    color: #00013f
+}
+
+@media screen and (max-width: 770px) 
+{
+    #offers{
+        grid-template-rows: 30% auto;
+        overflow-x: hidden ;
+
+    }   
+    .offers-items{
+        width: 100%;
+        margin: 50px 0px;
+
+    } 
+    .lg-title{
+        font-size: 4rem;
+    }
+    .offers-list-container{
+        margin: -130px auto 0 auto;
+    }
+}
